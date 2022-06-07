@@ -1,0 +1,21 @@
+.blank_container {
+    display: flex;
+    width: 75%;
+    align-items: center;
+    justify-content: center;
+    /* background-color: var(--light-bg); */
+    background: var(--blue); 
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+}
+.inner_container{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    width: 100%;
+    gap: 50px;
+    /* background: var(--blue); */
+    /* padding: 50px; */
+    flex-direction: column;
+}

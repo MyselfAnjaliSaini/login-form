@@ -1,0 +1,211 @@
+
+.loginContainer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  /* background-color: var(--light-bg); */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+  padding-left: 150px !important;
+}
+
+.loginForm {
+  width: 100%;
+  /* max-width: 460px; */
+  max-width: 550px;
+  padding: 30px;
+  /* border: 1px solid var(--border); */
+  background-color: var(--white);
+  border-radius: 10px;
+}
+
+.loginTop {
+  /* text-align: center; */
+  margin-bottom: 40px;
+}
+
+.loginTop .text-1 {
+  margin-top: 5px;
+}
+
+.form-outer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.form-input {
+  width: 100%;
+}
+
+.form-input .form-group {
+  margin: 0 0 30px;
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.form-input .form-group input {
+  /* margin-top: 5px; */
+  border-radius: 5px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  width: 100%;
+  max-height: 50px;
+  padding: 15px;
+  color: var(--black);
+}
+
+.form-input .form-group input:focus {
+  outline: 1px solid var(--blue);
+}
+.form-input .form-group input:focus + label {
+  color: var(--black);
+}
+.form-input .form-group.checking {
+  margin: 0 0 40px;
+}
+
+.red-alert {
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  color: var(--red);
+}
+.rotate {
+  margin-left: 10px;
+  /* width:20px; */
+  height: 20px;
+  fill: var(--white);
+  animation: rotation 2s linear infinite;
+}
+
+.a-tag {
+  color: var(--blue);
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+
+.btn.btn-outline-primary{
+  outline: none;
+    border: none;
+    background: white;
+    
+}
+.input-group-btn{
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+.input-group .form-input:not([value=""]) ~ .form-input-label,
+.input-group .form-input:focus ~ .form-input-label {
+  top: -18px;
+  left: 5px;
+  color: #181d2f;
+}
+
+.form-control {
+  border: 1px solid black
+}
+
+.error-control {
+  border: 1px solid red
+}
+
+#float-label .Active {
+  transform: translate(0, 12px) scale(0.75);
+}
+#float-label {
+  display: flex;
+  flex-direction: column;
+  min-width: 350px;
+  position: relative;
+}
+
+
+#float-label input {
+  width: 100%;
+  height: 56px;
+  padding: 14px 16px 0 10px;
+  outline: 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+#float-label label {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0 12px;
+  color: #999;
+  pointer-events: none;
+  transform-origin: top left;
+  transition: all 0.2s ease-out;
+  position: absolute;
+  transform: translate(0, 26px) scale(1);
+  
+}
+
+
+#float-label:focus-within label {
+  transform: translate(0, 5px) scale(0.75);
+}
+label.Active {
+  top: -10px;
+  left: 10px;
+  background: white;
+  padding: 0 10px !important;
+  transition: 0.5s all !important;
+}
+
+.input-label {
+  position: absolute;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+.form-input .form-group input:focus {
+  outline: 1px solid gray;
+  transition: 0.5s all;
+ 
+}
+.form-input .form-group input:focus + label {
+  top: -10px;
+  left: 10px;
+  background: white;
+  padding: 0 10px !important;
+  transition: 0.5s all !important;
+  /* color: gray !important; */
+}
+
+.form-input .form-group input.Active:focus {
+  outline: 1px solid red !important;
+}
+.form-input .form-group input.Active:focus + label{
+  color: red;
+}
+@media(max-width:1023px){
+  .section_container{
+    flex-direction: column;
+    align-items: center;
+    height: 100% !important;
+  }
+  .loginContainer{
+    padding-left: 0 !important;
+  }
+}

@@ -1,0 +1,63 @@
+.dropdown{
+    width:100%;
+    position: relative;
+    user-select: none;
+  }
+  .dropdown .dropdown-btn{
+    /* border: 1px solid var(--black); */
+    padding: 10px;
+    gap: 10px;
+    margin-top: 10px;
+    background-color: var(--bg-color);
+    border-radius: 5px;
+    /* box-shadow: 3px 3px; */
+    color: var(--black);
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    cursor: pointer;
+    background-image: url(https://epicenter2022.s3.ap-south-1.amazonaws.com/assets/img/caretDown.svg);
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+  }
+  .dropdown .dropdown-content{
+    position: absolute;
+    /* top: 100%;
+    left: 0; */
+    /* padding: 15px; */
+    background-color: var(--white);
+    color: var(--black);
+    width: 100%;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.05));
+    z-index: 1010;
+    
+  }
+  .dropdown .dropdown-content .dropdown-item{
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    background: var(--white);
+    border-bottom: 1px solid var(--bg-color);
+    /* border-radius: 5px; */
+  }
+  .dropdown .dropdown-content .dropdown-item:hover{
+    background-color: var(--bg-color);
+    color: var(--blue);
+  }
+  .selected-dropdown{
+    border: 1px solid var(--blue);
+  }
+  select.select{
+    margin-top: 5px;
+    border-radius: 5px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    width: 100%;
+    min-height: 50px;
+    padding: 15px;
+    color: var(--black);
+  }
